@@ -1,0 +1,35 @@
+<div class="container pricing">
+    <div class="row">
+        <div class="col">
+            <h2 class="projects__title">Pricing</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-9">
+            <div id="range" class="pricing-range">
+                <div class="pricing-range__range">
+                    <div class="pricing-range__range-line">
+                        <div class="lol"></div>
+                    </div>
+                </div>
+                <div class="pricing-range__config">
+                    <label class="pricing-range__duration-label">
+                        <span>Duration: </span>
+                        <span class="select-wrapper">
+                            <select name="duration" class="select pricing-range__duration"></select>
+                        </span>
+                    </label>
+                    <p class="pricing-range__price-label">
+                        <span class="pricing-range__price-label-text">Your price:</span>
+                        <span class="pricing-range__odometer-container">
+                            <span class="pricing-range__price-label-currency">$</span><span id="price-odometer"></span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3">
+            {{ partial "browsers" . }}
+        </div>
+    </div>
+</div>

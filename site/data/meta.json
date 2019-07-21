@@ -1,24 +1,24 @@
 {
   "features": [
     {
-      "title": "Lightning fast",
-      "description": "Times faster than\nSelenium Grid",
-      "icon": "lightning"
-    },
-    {
-      "title": "Easy installation",
-      "description": "One binary does all\nthe job in minutes",
-      "icon": "installation"
-    },
-    {
-      "title": "Modern UI",
-      "description": "Shows running browser\nscreen and logs",
-      "icon": "ui"
-    },
-    {
-      "title": "Cluster ready",
-      "description": "Works like a charm\nin big clusters",
+      "title": "In-house cluster",
+      "description": "Runs on any hardware \nand in the cloud",
       "icon": "cluster"
+    },
+    {
+      "title": "Unlimited browsers",
+      "description": "Run as many browsers \nas your cluster allows",
+      "icon": "browsers"
+    },
+    {
+      "title": "Openshift supported",
+      "description": "Runs on top of Kubernetes or Openshift",
+      "icon": "openshift"
+    },
+    {
+      "title": "Flexible pricing",
+      "description": "$5 per parallel session \nper month",
+      "icon": "pricing"
     }
   ],
   "social": [
@@ -99,13 +99,13 @@
   ],
   "articles": [
     {
-      "title": "Selenium: done in 60 seconds",
-      "description": "In this article we demonstrate how to obtain a running Selenoid instance in 60 seconds",
+      "title": "Selenium: Back to the Moon",
+      "description": "In this article we provide motivation for creating Moon and demonstrate first features.",
       "url": "https://medium.com/@aandryashin/selenium-done-in-60-seconds-176796f8bdc7"
     },
     {
-      "title": "Selenium on Windows: Docker Revolution",
-      "description": "This article solves the problem of the century - how to pack Windows-only browsers to Linux Docker containers",
+      "title": "Selenium: Exploring the Moon",
+      "description": "This article describes Moon architecture, why it is stateless and some  advanced stuff.",
       "url": "https://medium.com/@aandryashin/selenium-on-windows-docker-revolution-f5a7eab205ad"
     }
   ],

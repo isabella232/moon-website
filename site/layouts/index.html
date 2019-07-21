@@ -1,6 +1,8 @@
 {{ define "main" }}
-{{ partial "hero" . }}
-{{ partial "features" . }}
-{{ partial "projects" . }}
+<div class="background">
+    {{ partial "hero" . }}
+    {{ partial "features" . }}
+</div>
+{{ partial "pricing" . }}
 {{ partial "articles" . }}
 {{ end }}

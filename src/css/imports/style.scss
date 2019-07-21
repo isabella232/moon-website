@@ -1,19 +1,69 @@
 html, body {
     font-family: 'Ubuntu', sans-serif;
-    color: #6D6D7A;
+    color: #15254C;
     font-size: 18px;
 }
 
-body {
+.background {
     background-image: url('/images/background.svg');
-    background-size: 2228px 659px;
-    background-position: top center;
+    background-size: cover;
+    background-position: center 150px;
     background-repeat: no-repeat;
 }
 
 a, a:hover {
     text-decoration: none;
     color: inherit;
+}
+
+.input, .button, .select {
+    appearance: none;
+    font-size: 1rem;
+    padding: 14px 16px;
+    margin: 0;
+    border-radius: 4px;
+}
+
+.input {
+    font-weight: 300;
+
+    &_feedback {
+        flex-grow: 1;
+        border: none;
+        margin-right: 16px;
+    }
+}
+
+.button {
+    font-weight: bold;
+    color: white;
+    border: none;
+
+    &_feedback {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+.select-wrapper {
+    display: inline-block;
+    position: relative;
+
+    &:after {
+        content: "";
+        background-image: url('/images/dropdown.svg');
+        position: absolute;
+        right: 16px;
+        top: 27.5px;
+        height: 7.5px;
+        width: 15.5px;
+    }
+}
+
+.select {
+    border: 2px solid rgba(33, 57, 118, 0.2);
+    padding-right: 36px;
+    color: #0A225E;
+    background: none;
 }
 
 h1 {
@@ -142,7 +192,7 @@ nav li {
     }
 
     &__heading-description {
-        margin: 0 0 45px;
+        margin: 0 0 120px;
         color: #6D6D7A;
         font-weight: 300;
         line-height: 207%;
@@ -228,20 +278,36 @@ nav li {
     }
 }
 
+.feedback {
+    &__title {
+        display: block;
+        color: #fff;
+        font-size: 1.44rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+
+    &__input-container {
+        display: flex;
+    }
+}
+
 .features {
     margin-top: 95px;
+    padding-bottom: 77px;
 
     &__feature {
         text-align: center;
 
         &-title {
-            color: #002C30;
-            margin-top: 13px;
+            color: #fff;
+            margin: 13px 0 0;
             font-weight: 400;
         }
 
         &-description {
-            margin: 10px 0 0;
+            color: rgba(255, 255, 255, 0.6);
+            margin: 9px 0 0;
             font-weight: 300;
         }
     }
@@ -314,7 +380,7 @@ nav li {
         border-radius: 5px;
 
         &-title {
-            color: #197D86;
+            color: #1754ED;
             font-weight: 600;
             font-size: 1rem;
         }
@@ -328,7 +394,7 @@ nav li {
 }
 
 .footer {
-    background: linear-gradient(181.56deg, #B6F492 -254.68%, #338B93 74.78%);
+    background: linear-gradient(1.36deg, #213976 24.73%, #264694 76.82%);
     color: rgba(255, 255, 255, 0.8);
     margin-top: 100px;
     padding-top: 40px;
@@ -367,6 +433,102 @@ nav li {
     }
 }
 
+.pricing {
+    margin-top: 100px;
+}
+
+.pricing-range {
+    &__odometer-container {
+        display: inline-block;
+        font-family: 'Ubuntu Mono', monospace;
+        font-size: 46px;
+        line-height: 48px;
+        border: 2px solid rgba(44, 84, 183, 0.2);
+        border-radius: 4px;
+        vertical-align: middle;
+        padding: 0 7px;
+    }
+
+    &__range {
+        color: #2C54B7;
+
+        &-line {
+            position: relative;
+            height: 150px;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 30px;
+
+            & .lol {
+                position: absolute;
+                bottom: 51px;
+                width: 100%;
+                left: 0;
+                height: 12px;
+                border: 4px solid rgba(44, 84, 183, 0.2);
+                border-radius: 4px;
+            }
+
+            & .range-item-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                z-index: 10;
+                cursor: pointer;
+
+                & > p {
+                    font-size: 1.33rem;
+                    margin-bottom: 0;
+                    transition: transform 0.3s;
+                }
+
+                & > div {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 10px;
+                    background-color: #6B7EAD;
+                    transition: transform 0.3s, background-color 0.3s;
+                }
+
+                &_selected {
+                    & > p {
+                        transform: translateY(-15px) scale(1.53);
+                    }
+
+                    & > div {
+                        transform: scale(2.1);
+                        background-color: #1754ED;
+                    }
+                }
+            }
+        }
+    }
+
+    &__config {
+        color: #0A225E;
+        font-size: 1.33rem;
+        display: flex;
+    }
+
+    &__duration-label {
+        margin-bottom: 0;
+    }
+
+    &__price-label {
+        margin-left: 32px;
+        margin-bottom: 0;
+    }
+
+    &__price-label-currency {
+        vertical-align: middle;
+    }
+
+    & #price-odometer {
+
+    }
+}
+
 @media (max-width: 576px) {
     body {
         background-image: none;
@@ -380,12 +542,38 @@ nav li {
         display: block;
     }
 
+    .hero__heading-title {
+        text-align: center;
+    }
+
+    .hero__heading-description {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .feedback__input-container {
+        flex-direction: column;
+    }
+
+    .input_feedback {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
     .features {
         margin-top: 60px;
     }
 
     .videos {
         margin-top: 23px;
+    }
+
+    .pricing-range__config {
+        flex-direction: column;
+    }
+
+    .pricing-range__price-label {
+        margin-left: 0;
     }
 
     .footer__left {
