@@ -7,7 +7,7 @@ html, body {
 .background {
     background-image: url('/images/background.svg');
     background-size: cover;
-    background-position: center 150px;
+    background-position: center 100px;
     background-repeat: no-repeat;
 }
 
@@ -26,6 +26,7 @@ a, a:hover {
 
 .input {
     font-weight: 300;
+    border: 2px solid rgba(33, 57, 118, 0.2);
 
     &_feedback {
         flex-grow: 1;
@@ -38,6 +39,7 @@ a, a:hover {
     font-weight: bold;
     color: white;
     border: none;
+    background-color: #1754ED;
 
     &_feedback {
         background-color: rgba(0, 0, 0, 0.6);
@@ -423,13 +425,20 @@ nav li {
 
 .browsers {
     list-style-type: none;
-    letter-spacing: 24px;
+    letter-spacing: 83px;
+    line-height: 95px;
     margin: 0;
     padding: 0;
+    text-align: center;
 
     & li {
         display: inline-block;
         letter-spacing: normal;
+    }
+
+    & img {
+        width: 48px;
+        height: 48px;
     }
 }
 
@@ -447,6 +456,10 @@ nav li {
         border-radius: 4px;
         vertical-align: middle;
         padding: 0 7px;
+    }
+
+    & label {
+        margin-bottom: 24px;
     }
 
     &__range {
@@ -511,21 +524,34 @@ nav li {
         display: flex;
     }
 
-    &__duration-label {
-        margin-bottom: 0;
-    }
-
     &__price-label {
         margin-left: 32px;
-        margin-bottom: 0;
     }
 
     &__price-label-currency {
         vertical-align: middle;
     }
 
-    & #price-odometer {
+    &__credentials {
+        & input {
+            margin-right: 24px;
 
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.input {
+                width: 280px;
+            }
+
+            &.button {
+                width: 130px;
+            }
+        }
+    }
+
+    &__duration-label-text, &__price-label-text {
+        margin-right: 10px;
     }
 }
 
@@ -576,6 +602,14 @@ nav li {
         margin-left: 0;
     }
 
+    .pricing-range__odometer-container {
+        font-size: 28px;
+    }
+
+    .odometer-formatting-mark:before {
+        top: -7px;
+    }
+
     .footer__left {
         font-size: 1.33rem;
         line-height: 3rem;
@@ -599,10 +633,6 @@ nav li {
     .articles__video iframe {
         height: 200px;
     }
-
-    .browsers {
-        letter-spacing: 18px;
-    }
 }
 
 @media (max-width: 992px) {
@@ -610,5 +640,17 @@ nav li {
         width: 100%;
         max-width: initial;
         height: inherit;
+    }
+
+    .pricing-range__credentials {
+        flex-direction: column;
+
+        & input {
+            margin-bottom: 24px;
+
+            &.input, &.button {
+                width: 100%
+            }
+        }
     }
 }

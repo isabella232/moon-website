@@ -62,22 +62,12 @@ class Range {
       this.odometer.update(this.value);
     }
 
-    this.render();
-  }
-
-  createTitle() {
-    this.title = document.createElement("p");
-  }
-
-  createNodes() {
-    this.rangeContainer = document.createElement("div");
-    this.rangeContainer.classList.add(this.blockName + "__container");
-
-    this.selector.appendChild(this.rangeContainer);
+    this.priceInput.value = this.value;
   }
 
   createRange() {
     this.rangeContainer = this.selector.querySelector(".pricing-range__range");
+    this.rangeSelect = this.selector.querySelector(".pricing-range__range-select");
     this.rangeLine = this.rangeContainer.querySelector(".pricing-range__range-line");
 
     this.values.forEach((value) => {
@@ -93,6 +83,28 @@ class Range {
     this.title.innerText = this.params.title;
 
     this.rangeLine.appendChild(this.title);
+
+    this.createRangeSelect();
+  }
+
+  createRangeSelect() {
+    this.rangeSelect = this.selector.querySelector(".pricing-range__range-select");
+
+    this.values.forEach((value) => {
+      const element = document.createElement("option");
+      element.setAttribute("value", value);
+      element.innerText = value;
+      this.rangeSelect.appendChild(element);
+    });
+
+    this.rangeSelect.addEventListener("change", (event) => {
+      const value = event.target.value;
+
+      this.setSession(value);
+      this.setValue();
+    });
+
+    this.setSession(this.session);
   }
 
   createDuration() {
@@ -138,6 +150,16 @@ class Range {
         item.container.classList.remove("range-item-container_selected");
       }
     }
+
+    const options = this.rangeSelect.options;
+
+    for (let i = 0; i < options.length; i++) {
+      if (options[i].value !== this.session.toString()) {
+        options[i].removeAttribute("selected");
+      } else {
+        options[i].setAttribute("selected", "");
+      }
+    }
   }
 
   createRangeItem(value) {
@@ -167,6 +189,7 @@ class Range {
 
   createValue() {
     this.valueContainer = document.getElementById("price-odometer");
+    this.priceInput = document.getElementById("price-input");
 
     this.odometer = new window.Odometer({
       el: this.valueContainer,
@@ -174,10 +197,6 @@ class Range {
       numberLength: 5,
       theme: "minimal"
     });
-  }
-
-  render() {
-    console.log("lol kek", "$" + this.value);
   }
 }
 
