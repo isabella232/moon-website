@@ -195,7 +195,8 @@ class Range {
       el: this.valueContainer,
       value: this.value,
       numberLength: 5,
-      theme: "minimal"
+      theme: "minimal",
+      format: "(,ddddd)"
     });
   }
 }
