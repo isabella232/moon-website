@@ -612,8 +612,12 @@ nav li {
         font-weight: 300;
     }
 
+    .odometer-digit:before {
+        top: 2px;
+    }
+
     .odometer-formatting-mark:before {
-        top: -7px;
+        top: -6px;
     }
 
     .footer__left {
