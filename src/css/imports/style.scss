@@ -82,13 +82,21 @@ h3 {
 }
 
 h2 {
-    color: #002C30;
+    color: #0A225E;
 }
 
 nav a {
     color: rgba(255, 255, 255, 0.8);
     font-weight: 500;
     transition: color 0.3s;
+}
+
+header nav a {
+    color: rgba(21, 37, 76, 0.75);
+}
+
+header nav a:hover {
+    color: rgba(21, 37, 76, 1);
 }
 
 nav a:hover {
@@ -158,9 +166,9 @@ nav li {
         }
 
         &-container {
-            border-top: 5px solid #197D86;
+            border-top: 5px solid #4577F1;
             box-shadow: 0 4px 12px rgba(13, 3, 30, 0.25);
-            border-bottom: 5px solid #197D86;
+            border-bottom: 5px solid #4577F1;
             border-radius: 4px;
             background-color: white;
             margin: 0;
@@ -366,7 +374,7 @@ nav li {
 }
 
 .articles {
-    margin-top: 51px;
+    margin-top: 82px;
 
     &__content {
         margin-top: 32px;
@@ -444,6 +452,10 @@ nav li {
 
 .pricing {
     margin-top: 100px;
+
+    &__title {
+        color: #ADADAD;
+    }
 }
 
 .pricing-range {
@@ -533,6 +545,25 @@ nav li {
         vertical-align: middle;
     }
 
+    &__toggle-container {
+        position: relative;
+    }
+
+    &__contact-us-container {
+        display: none;
+        font-size: 46px;
+        line-height: 48px;
+        margin: 6px 0;
+    }
+
+    &__toggle-container_contact-us &__odometer-container {
+        display: none;
+    }
+
+    &__toggle-container_contact-us &__contact-us-container {
+        display: block;
+    }
+
     &__credentials {
         & input {
             margin-right: 24px;
@@ -605,6 +636,11 @@ nav li {
 
     .pricing-range__odometer-container {
         font-size: 28px;
+    }
+
+    .pricing-range__contact-us-container {
+        font-size: 28px;
+        margin: 4px 0;
     }
 
     .pricing-range__config {

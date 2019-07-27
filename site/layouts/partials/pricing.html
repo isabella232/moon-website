@@ -1,7 +1,7 @@
 <div class="container pricing">
     <div class="row">
         <div class="col">
-            <h2 class="projects__title">Pricing</h2>
+            <h2 class="pricing__title" id="pricing">Pricing</h2>
         </div>
     </div>
     <div class="row">
@@ -27,8 +27,11 @@
                     </label>
                     <label class="d-flex justify-content-between align-items-center pricing-range__price-label">
                         <span class="pricing-range__price-label-text">Your price:</span>
-                        <span class="pricing-range__odometer-container">
-                            <span class="pricing-range__price-label-currency">$</span><span id="price-odometer"></span>
+                        <span class="pricing-range__toggle-container">
+                            <span class="pricing-range__odometer-container">
+                                <span class="pricing-range__price-label-currency">$</span><span id="price-odometer"></span>
+                            </span>
+                            <span class="pricing-range__contact-us-container">Contact us</span>
                         </span>
                         <input id="price-input" type="hidden" name="price" value="0">
                     </label>

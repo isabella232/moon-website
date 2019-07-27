@@ -47,6 +47,16 @@
       "url": "mailto:support@aerokube.com"
     }
   ],
+  "navigation": [
+    {
+      "name": "Pricing",
+      "url": "/#pricing"
+    },
+    {
+      "name": "Documentation",
+      "url": "/#articles"
+    }
+  ],
   "verticals": [
     {
       "name": "Aerokube",

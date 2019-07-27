@@ -1,6 +1,6 @@
 const defaultParams = {
   blockName: "pricing-range",
-  sessions: [10, 20, 50, 100, 500, 1000],
+  sessions: [10, 20, 50, 100, 500, 1000, "∞"],
   defaultSession: 50,
   defaultMonth: "6",
   months: [
@@ -44,6 +44,7 @@ class Range {
     this.session = this.params.defaultSession;
     this.price = this.params.price;
     this.value = null;
+    this.contactUsMode = false;
 
     this.valueItems = new Map();
 
@@ -56,7 +57,29 @@ class Range {
     this.setValue();
   }
 
+  toggleContactUs(contactUsVisible = true) {
+    if (contactUsVisible === this.contactUsMode) {
+      return;
+    }
+
+    this.contactUsMode = contactUsVisible;
+
+    if (contactUsVisible) {
+      this.toggleContainer.classList.add("pricing-range__toggle-container_contact-us");
+    } else {
+      this.toggleContainer.classList.remove("pricing-range__toggle-container_contact-us");
+    }
+  }
+
   setValue() {
+    if (this.session === "∞") {
+      this.toggleContactUs();
+      this.priceInput.value = "infinity";
+
+      return;
+    }
+
+    this.toggleContactUs(false);
     this.value = this.price * Number(this.month) * this.session;
     if (this.odometer) {
       this.odometer.update(this.value);
@@ -69,6 +92,7 @@ class Range {
     this.rangeContainer = this.selector.querySelector(".pricing-range__range");
     this.rangeSelect = this.selector.querySelector(".pricing-range__range-select");
     this.rangeLine = this.rangeContainer.querySelector(".pricing-range__range-line");
+    this.toggleContainer = document.querySelector(".pricing-range__toggle-container");
 
     this.values.forEach((value) => {
       const valueMapItem = this.createRangeItem(value);

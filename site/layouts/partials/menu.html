@@ -5,7 +5,7 @@
     <input id="menu" type="checkbox">
     <div class="header__menu-wrapper">
         <ul class="header__menu-container">
-            {{ range .Site.Data.meta.social }}
+            {{ range .Site.Data.meta.navigation }}
             <li><a href="{{ .url }}">{{ .name }}</a></li>
             {{ end }}
         </ul>
