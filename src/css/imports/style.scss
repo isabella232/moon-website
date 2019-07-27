@@ -550,10 +550,15 @@ nav li {
     }
 
     &__contact-us-container {
+        cursor: pointer;
         display: none;
+        font-family: 'Ubuntu Mono', monospace;
         font-size: 46px;
         line-height: 48px;
-        margin: 6px 0;
+        border: 2px solid rgba(44, 84, 183, 0.2);
+        border-radius: 4px;
+        vertical-align: middle;
+        padding: 4px 7px;
     }
 
     &__toggle-container_contact-us &__odometer-container {
@@ -561,7 +566,7 @@ nav li {
     }
 
     &__toggle-container_contact-us &__contact-us-container {
-        display: block;
+        display: inline-block;
     }
 
     &__credentials {
@@ -640,7 +645,7 @@ nav li {
 
     .pricing-range__contact-us-container {
         font-size: 28px;
-        margin: 4px 0;
+        padding: 2px 7px;
     }
 
     .pricing-range__config {
