@@ -22,7 +22,7 @@
   <meta property="og:image:width" content="2113">
   {{ $title := .Title | default .Site.Title }}
   <meta property="og:title" content="{{ $title }}">
-  {{ $description := .Description }}
+  {{ $description := .Description | default .Site.Params.description }}
   {{ if .IsPage }}
   {{ $description = .Summary | plainify }}
   {{ end }}
@@ -46,7 +46,9 @@
     <link href="{{ relURL . }}" rel="stylesheet">
   {{ end }}
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&amp;display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="js/odometer.min.js" type="text/javascript"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -65,20 +67,20 @@
       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-    ym(43539754, "init", {
+    ym(50174314, "init", {
       clickmap:true,
       trackLinks:true,
       accurateTrackBounce:true,
-      webvisor:true,
-      trackHash:true
+      webvisor:true
     });
   </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/43539754" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <noscript><div><img src="https://mc.yandex.ru/watch/50174314" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
 
 </head>
 
 <body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
 
   {{ block "header" . }}{{ partial "header" . }}{{end}}
 
