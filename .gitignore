@@ -2,3 +2,5 @@ node_modules/
 dist/
 site/data/webpack.json
 .idea
+*.iml
+.DS_Store

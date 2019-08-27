@@ -24,15 +24,15 @@
   "social": [
     {
       "name": "Docs",
-      "url": "https://aerokube.com/selenoid/latest"
+      "url": "https://aerokube.com/moon/latest"
     },
     {
       "name": "Github",
-      "url": "https://github.com/aerokube/selenoid"
+      "url": "https://github.com/aerokube/moon"
     },
     {
       "name": "Telegram",
-      "url": "https://t.me/aerokube"
+      "url": "https://t.me/aerokube_moon"
     },
     {
       "name": "Twitter",
@@ -68,11 +68,11 @@
     },
     {
       "name": "Moon",
-      "url": "https://moon.aerokube.com/"
+      "url": "https://aerokube.com/moon/"
     },
     {
       "name": "Selenoid",
-      "url": "https://selenoid.aerokube.com/"
+      "url": "https://aerokube.com/selenoid/"
     }
   ],
   "projects": [

@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "Aerokube Moon | Powerful implementation of Selenium hub using Kubernetes"
+title = "Aerokube Moon | An Enterprise Selenium Solution Running in Kubernetes"
 
 enableRobotsTXT = true
 
@@ -10,3 +10,6 @@ enableRobotsTXT = true
 # See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+[params]
+description = "Launch an unlimited number of Selenium sessions in isolated containers running in Kubernetes cluster"
