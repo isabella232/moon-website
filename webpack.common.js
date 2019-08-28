@@ -32,7 +32,14 @@ module.exports = {
       {
         test: /\.(sa|sc|c)ss$/,
         exclude: /node_modules/,
-        use: ["style-loader", MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"]
+        use: [
+          "style-loader", MiniCssExtractPlugin.loader, "css-loader", "postcss-loader",
+          {
+            loader: "sass-loader",
+            options: {
+              data: "$prefix: \"" + (process.env.NODE_ENV === "production" ? "/moon" : "") + "\";"
+            }
+          }]
       }
     ]
   },

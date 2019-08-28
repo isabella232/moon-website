@@ -5,7 +5,7 @@ html, body {
 }
 
 .background {
-    background-image: url('/images/background.svg');
+    background-image: url('#{$prefix}/images/background.svg');
     background-size: cover;
     background-position: center 100px;
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@ a, a:hover {
 
     &:after {
         content: "";
-        background-image: url('/images/dropdown.svg');
+        background-image: url('#{$prefix}/images/dropdown.svg');
         position: absolute;
         right: 16px;
         top: 27.5px;
