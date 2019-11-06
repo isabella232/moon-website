@@ -50,11 +50,11 @@
   "navigation": [
     {
       "name": "Pricing",
-      "url": "/#pricing"
+      "url": "/moon/#pricing"
     },
     {
       "name": "Documentation",
-      "url": "/#articles"
+      "url": "/moon/#articles"
     }
   ],
   "verticals": [
@@ -111,12 +111,12 @@
     {
       "title": "Selenium: Back to the Moon",
       "description": "In this article we provide motivation for creating Moon and demonstrate first features.",
-      "url": "https://medium.com/@aandryashin/selenium-done-in-60-seconds-176796f8bdc7"
+      "url": "https://medium.com/@aandryashin/selenium-back-to-the-moon-6ea73f1657cc"
     },
     {
       "title": "Selenium: Exploring the Moon",
       "description": "This article describes Moon architecture, why it is stateless and some  advanced stuff.",
-      "url": "https://medium.com/@aandryashin/selenium-on-windows-docker-revolution-f5a7eab205ad"
+      "url": "https://medium.com/@aandryashin/selenium-exploring-the-moon-b7402936cafe"
     }
   ],
   "videos": [
