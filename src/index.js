@@ -27,18 +27,17 @@ document.addEventListener("DOMContentLoaded", () => {
     notify("#d32f2f", message);
   };
   window.onSubmit = function() {
-    $.post(apiEndpoint, $("form#license-form").serialize())
-      .done(function(evt, status, xhr) {
-        if (xhr.status === 200) {
-          success("An evaluation license key was sent to your email address");
-        } else {
-          failure(`An error while requesting evaluation license key: ${xhr.statusText}`);
-        }
+    $.ajax({
+      url: apiEndpoint,
+      data: $("form#license-form").serialize(),
+      success: function() {
+        success("An evaluation license key was sent to your email address");
         reset();
-      })
-      .fail(function(e) {
-        failure(`Failed to request evaluation license key: ${e.statusText}`);
+      },
+      error: function(xhr) {
+        failure(`Failed to request evaluation license key: ${xhr.responseText}`);
         reset();
-      });
+      }
+    });
   };
 });
