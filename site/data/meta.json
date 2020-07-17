@@ -109,9 +109,14 @@
   ],
   "articles": [
     {
-      "title": "Selenium: Back to the Moon",
-      "description": "In this article we provide motivation for creating Moon and demonstrate first features.",
-      "url": "https://medium.com/@aandryashin/selenium-back-to-the-moon-6ea73f1657cc"
+      "title": "Playwright: Launching Cross-Browser Automation to the Stars",
+      "description": "This article demonstrates how to run parallel Playwright tests with Moon.",
+      "url": "https://medium.com/@aandryashin/playwright-launching-cross-browser-automation-to-the-stars-4a9cca8f0df0"
+    },
+    {
+      "title": "Next Mission to Moon",
+      "description": "This article demonstrates new Moon features: Chrome Developer Tools support, manual testing and so on.",
+      "url": "https://medium.com/@aandryashin/next-mission-to-moon-cross-browser-selenium-testing-in-kubernetes-e2721144591a"
     },
     {
       "title": "Selenium: Exploring the Moon",
@@ -119,9 +124,9 @@
       "url": "https://medium.com/@aandryashin/selenium-exploring-the-moon-b7402936cafe"
     },
     {
-      "title": "Next Mission to Moon",
-      "description": "This article demonstrates new Moon features: Chrome Developer Tools support, manual testing and so on.",
-      "url": "https://medium.com/@aandryashin/next-mission-to-moon-cross-browser-selenium-testing-in-kubernetes-e2721144591a"
+      "title": "Selenium: Back to the Moon",
+      "description": "In this article we provide motivation for creating Moon and demonstrate first features.",
+      "url": "https://medium.com/@aandryashin/selenium-back-to-the-moon-6ea73f1657cc"
     }
   ],
   "videos": [
