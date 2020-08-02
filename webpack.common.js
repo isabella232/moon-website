@@ -37,7 +37,7 @@ module.exports = {
           {
             loader: "sass-loader",
             options: {
-              data: "$prefix: \"" + (process.env.NODE_ENV === "production" ? "/moon" : "") + "\";"
+              additionalData: "$prefix: \"" + (process.env.NODE_ENV === "production" ? "/moon" : "") + "\";"
             }
           }]
       }
