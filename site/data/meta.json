@@ -11,8 +11,8 @@
       "icon": "browsers"
     },
     {
-      "title": "Openshift supported",
-      "description": "Runs on top of Kubernetes or Openshift",
+      "title": "Playwright supported",
+      "description": "Run your Playwright tests \nin parallel",
       "icon": "openshift"
     },
     {
