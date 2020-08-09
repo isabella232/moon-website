@@ -16,6 +16,10 @@ a, a:hover {
     color: inherit;
 }
 
+a[href] {
+    border-bottom: 1px dashed;
+}
+
 .input, .button, .select {
     appearance: none;
     font-size: 1rem;
@@ -119,6 +123,9 @@ nav li {
     height: 80px;
 
     &__logo {
+
+        border-bottom-style: none !important;
+
         &-image {
             width: 40px;
             height: 40px;
@@ -130,7 +137,7 @@ nav li {
             font-weight: bold;
             color: rgba(0, 0, 0, 0.8);
             vertical-align: middle;
-            margin-left: 18px;
+            margin-left: 8px;
         }
     }
 
@@ -403,6 +410,15 @@ nav li {
     }
 }
 
+.assistance {
+    margin-top: 82px;
+
+    &__content {
+        margin-top: 32px;
+    }
+
+}
+
 .footer {
     background: linear-gradient(1.36deg, #213976 24.73%, #264694 76.82%);
     color: rgba(255, 255, 255, 0.8);
@@ -452,10 +468,6 @@ nav li {
 
 .pricing {
     margin-top: 100px;
-
-    &__title {
-        color: #ADADAD;
-    }
 }
 
 .pricing-range {
