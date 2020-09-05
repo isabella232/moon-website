@@ -419,6 +419,38 @@ nav li {
 
 }
 
+.cloud {
+    margin-top: 82px;
+
+    &__content {
+        margin-top: 32px;
+
+        .video {
+            position: relative;
+            margin: 10px 0;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video iframe, .video object, .video embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .case {
+            padding-left: 30px;
+            font-size: 120%;
+            font-weight: bold;
+        }
+    }
+
+}
+
 .footer {
     background: linear-gradient(1.36deg, #213976 24.73%, #264694 76.82%);
     color: rgba(255, 255, 255, 0.8);
