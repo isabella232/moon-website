@@ -109,6 +109,11 @@
   ],
   "articles": [
     {
+      "title": "Selenium Grid 4: Do you really need it?",
+      "description": "This article describes what are the main components of Selenium Grid 4 and how Moon differs from it.",
+      "url": "https://aandryashin.medium.com/selenium-grid-4-do-you-really-need-it-ab03366625b0"
+    },
+    {
       "title": "Selenium: Lightning Fast Mobile Emulation in Kubernetes",
       "description": "This article describes how mobile emulation in Chrome browser can save you a lot of time and money.",
       "url": "https://aandryashin.medium.com/selenium-lightning-fast-mobile-emulation-in-kubernetes-e41140cd6f54"
