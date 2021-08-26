@@ -113,44 +113,49 @@
   ],
   "articles": [
     {
+      "title": "Cypress: Remote Tests Execution Made Simple",
+      "description": "This article describes how to run your Cypress tests in parallel with Moon.",
+      "url": "https://blog.aerokube.com/cypress-remote-tests-execution-made-simple-f17645c2b682"
+    },
+    {
       "title": "Selenium Grid 4: Do you really need it?",
       "description": "This article describes what are the main components of Selenium Grid 4 and how Moon differs from it.",
-      "url": "https://aandryashin.medium.com/selenium-grid-4-do-you-really-need-it-ab03366625b0"
+      "url": "https://blog.aerokube.com/selenium-grid-4-do-you-really-need-it-ab03366625b0"
     },
     {
       "title": "Selenium: Lightning Fast Mobile Emulation in Kubernetes",
       "description": "This article describes how mobile emulation in Chrome browser can save you a lot of time and money.",
-      "url": "https://aandryashin.medium.com/selenium-lightning-fast-mobile-emulation-in-kubernetes-e41140cd6f54"
+      "url": "https://blog.aerokube.com/selenium-lightning-fast-mobile-emulation-in-kubernetes-e41140cd6f54"
     },
     {
       "title": "Browser Automation: How an efficient Selenium Cloud Platform should look like in 2020",
       "description": "This article gives more details about Moon Cloud solution.",
-      "url": "https://aandryashin.medium.com/browser-automation-how-an-efficient-selenium-cloud-platform-should-look-like-in-2020-540d2c9ec62f"
+      "url": "https://blog.aerokube.com/browser-automation-how-an-efficient-selenium-cloud-platform-should-look-like-in-2020-540d2c9ec62f"
     },
     {
       "title": "Moon: the Swiss Army Knife for Browser Automation",
       "description": "This article demonstrates how to run Puppeteer tests in parallel with Moon",
-      "url": "https://aandryashin.medium.com/moon-the-swiss-army-knife-for-browser-automation-7a1382c0702b"
+      "url": "https://blog.aerokube.com/moon-the-swiss-army-knife-for-browser-automation-7a1382c0702b"
     },
     {
       "title": "Playwright: Launching Cross-Browser Automation to the Stars",
       "description": "This article demonstrates how to run parallel Playwright tests with Moon.",
-      "url": "https://medium.com/@aandryashin/playwright-launching-cross-browser-automation-to-the-stars-4a9cca8f0df0"
+      "url": "https://blog.aerokube.com/playwright-launching-cross-browser-automation-to-the-stars-4a9cca8f0df0"
     },
     {
       "title": "Next Mission to Moon",
       "description": "This article demonstrates new Moon features: Chrome Developer Tools support, manual testing and so on.",
-      "url": "https://medium.com/@aandryashin/next-mission-to-moon-cross-browser-selenium-testing-in-kubernetes-e2721144591a"
+      "url": "https://blog.aerokube.com/next-mission-to-moon-cross-browser-selenium-testing-in-kubernetes-e2721144591a"
     },
     {
       "title": "Selenium: Exploring the Moon",
       "description": "This article describes Moon architecture, why it is stateless and some  advanced stuff.",
-      "url": "https://medium.com/@aandryashin/selenium-exploring-the-moon-b7402936cafe"
+      "url": "https://blog.aerokube.com/selenium-exploring-the-moon-b7402936cafe"
     },
     {
       "title": "Selenium: Back to the Moon",
       "description": "In this article we provide motivation for creating Moon and demonstrate first features.",
-      "url": "https://medium.com/@aandryashin/selenium-back-to-the-moon-6ea73f1657cc"
+      "url": "https://blog.aerokube.com/selenium-back-to-the-moon-6ea73f1657cc"
     }
   ],
   "videos": [
